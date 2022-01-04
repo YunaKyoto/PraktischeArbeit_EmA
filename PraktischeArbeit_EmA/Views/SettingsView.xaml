@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PraktischeArbeit_EmA.Views.SettingsView">
+    <StackLayout Padding="14">
+        <Button Text="Load 3 User" Command="{Binding Load}" BackgroundColor="Green"/>
+        <Button Text="Delete All User" Command="{Binding DeleteAll}" BackgroundColor="Red"/>
+    </StackLayout>
+</ContentPage>

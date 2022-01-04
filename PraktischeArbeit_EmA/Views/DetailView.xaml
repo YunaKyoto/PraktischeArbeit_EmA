@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PraktischeArbeit_EmA.Views.DetailView">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Save" Command="{Binding SaveItem}"/>
+    </ContentPage.ToolbarItems>
+    <StackLayout Padding="14">
+        <Image WidthRequest="100" HeightRequest="100" Aspect="AspectFit" Source="{Binding Item.Picture}"/>
+        <Label FontSize="16" FontAttributes="Bold" Text="Name: "/>
+        <Entry Text="{Binding Item.Name} " />
+        <Label FontSize="16" FontAttributes="Bold" Text="Gender: " />
+        <Entry Text="{Binding Item.Gender} " />
+        <Label FontSize="16" FontAttributes="Bold" Text="Birthday: " />
+        <Entry Text="{Binding Item.Birthday} " />
+        <Label FontSize="16" FontAttributes="Bold" Text="Phone: "/>
+        <Entry Text="{Binding Item.Phone} " />
+        <Button IsVisible="{Binding Visible}" Text="Delete User" Command="{Binding Delete}" BackgroundColor="Red"/>
+    </StackLayout>
+</ContentPage>
